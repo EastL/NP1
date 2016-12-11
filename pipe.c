@@ -110,6 +110,10 @@ void decress_count(int err)
 			}
 			else
 			{
+				if (temp->next == NULL)
+				{
+					pipe_rear = pre;
+				}
 				pre->next = temp->next;
 				free_pipe(temp);
 				//for next
